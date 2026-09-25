@@ -1,0 +1,9 @@
+project: savantenvs/pyntcloud
+target: parse-fuzz-buggy-mhh-run-7
+cmds:
+  - cmd: /mayhem/fuzz_parser
+    libfuzzer: true
+    timeout: 60
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+# origin: https://app.mayhem.security/mayhemheroes/pyntcloud/parse-fuzz/7
